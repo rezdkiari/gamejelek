@@ -1,0 +1,45 @@
+var musuh = Math.floor(Math.random() *3);
+var user = prompt("Masukan angkanya saja\n1. gunting\n2. batu\n3. kertas?");
+ var lawan ;
+function jajanken(){
+switch(user){
+  case "1":
+    user = "gunting"; break;
+  case "2":
+    user = "batu"; break;
+  case "3":
+    user = "kertas"; break;
+  default:
+    alert("error"); break;
+}
+
+switch(musuh){
+  case 0:
+    lawan = "gunting"; break;
+  case 1:
+    lawan = "batu"; break;
+  case 2:
+    lawan = "kertas"; break;
+  default:
+    alert("error"); break;
+}
+console.log(lawan);
+if(user === lawan) {
+  return "draw";
+}else{
+  if(user === "gunting" && lawan ==="batu") {
+    return "kalah";
+  }else if(user ==="gunting" && lawan === "kertas"){
+    return "menang";
+  }else if(user === "batu" && lawan === "gunting"){
+    return "menang";
+  }else if(user === "batu" && lawan === "kertas"){
+    return "kalah";
+  }else if(user === "kertas" && lawan === "gunting"){
+    return "kalah";
+  }else if(user === "kertas" && lawan === "batu"){
+    return "menang";
+  }
+}
+}
+console.log(jajanken());
