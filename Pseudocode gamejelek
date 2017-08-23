@@ -1,0 +1,10 @@
+Pilih gunting, batu, atau kertas dalam bentuk angka 1, 2, atau 3
+Diluar ketiga angka tersebut muncul kata 'error'
+Musuh akan melawan dengan Math.random
+Jika user = musuh berarti 'draw'
+Jika user = gunting, musuh = batu berarti 'kalah'
+Jika user = gunting, musuh = kertas berarti 'menang'
+Jika user = batu, musuh = gunting berarti 'menang'
+Jika user = batu, musuh = kertas berarti 'kalah'
+Jika user = kertas, musuh = gunting berarti 'kalah'
+Jika user = kertas, musuh = batu berarti 'menang'
